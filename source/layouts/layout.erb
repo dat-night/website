@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Use the title from a page's frontmatter if it has one -->
+    <title><%= current_page.data.title || "Middleman" %></title>
+    <%= stylesheet_link_tag "app" %>
+    <%= javascript_include_tag "site" %>
+  </head>
+  <body>
+    <main>
+      <%= yield %>
+    </main>
+
+    <footer>
+      <a href="https://rumo.rs" target="_blank">Rumors</a> / 
+      <a href="https://datproject.org/" target="_blank">Dat Project</a> / 
+      <a href="https://codeforscience.org/" target="_blank">Code for Science and Society</a> / 
+      <a href="https://beakerbrowser.com/" target="_blank">Beaker Browser</a>
+      
+      <p>This site is typeset in <a href="https://www.futurefonts.xyz/scribble-tone/iso">ISO</a>, which was designed by Travis Kochel of <a href="https://www.scribbletone.com/">Scribbletone</a>, and licensed via <a href="https://futurefonts.xyz">Future Fonts</a>.
+      </p>
+      <a>Code of conduct</a> 
+      <form>
+        <input><button>
+      </form>
+    </footer>
+  </body>
+</html>

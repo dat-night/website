@@ -1,0 +1,29 @@
+// Colors
+$color-black: #030303;
+$color-white: #fff;
+$color-gray-light: #e2e2e2;
+$color-blue: #3455db;
+
+$type-family-sans: 'ISO', mono;
+
+$type-size-base: 18px;
+$type-leading-base: 26px;
+
+$type-size-medium: 2rem;
+$type-leading-medium: 1.1;
+
+$type-size-big: 3rem;
+$type-leading-big: 1.2;
+
+$type-size-small: 14px;
+$type-leading-small: 26px;
+
+// Breakpoints
+$breakpoint-desktop: 1500px;
+$breakpoint-laptop: 1250px;
+$breakpoint-tablet: 1024px;
+$breakpoint-mobile: 640px;
+
+// transitions
+$base-timing: 0.2s;
+$base-transition: ease;
