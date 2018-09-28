@@ -1,0 +1,11 @@
+{
+  "name": "dat-night",
+  "version": "1.0.0",
+  "description": "Website for Dat Night",
+  "author": "Rumors Studio",
+  "private": true,
+  "scripts": {
+    "build": "npm run fonts:fetch && middleman build",
+    "fonts:fetch": "wget -O fonts.zip $FONTS_URL; unzip fonts.zip -d ./source/fonts; rm fonts.zip",
+  }
+}
