@@ -79,8 +79,8 @@ p {
 
 h1 {
   font-size: $type-size-medium;
-  line-height: $type-leading-medium;
   font-weight: 400;
+  line-height: $type-leading-medium;
 
   @include tablet {
     font-size: $type-size-big;
@@ -96,9 +96,9 @@ ul {
 blockquote,
 q {
   font-style: italic;
-  quotes: none;
   margin: 0;
   padding: 0;
+  quotes: none;
 
   p:last-of-type {
     margin-bottom: 0;

@@ -2,4 +2,24 @@
   &__callout {
     margin-bottom: 2rem;
   }
+
+  &__content {
+    margin: 2rem 0;
+    max-width: 50ch;
+  }
+
+  &__tickets button {
+    background: $color-black;
+    border: 1px solid $color-black;
+    color: $color-white;
+    font-family: $type-family-sans;
+    padding: 1rem;
+    text-align: center;
+
+    &:hover {
+      background: $color-white;
+      border: 1px solid $color-black;
+      color: $color-black;
+    }
+  }
 }
