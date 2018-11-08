@@ -8,11 +8,12 @@
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@dat-night" />
+    <meta name="twitter:image" content="<%= current_page.url %>/images/preview.png">
  
     <meta property="og:url" content="<%= current_page.url %>" />
     <meta property="og:title" content="Dat Night" />
     <meta property="og:description" content="Dat Night is a monthly meetup in Portland, Oregon for people interested in decentralized and distributed web technologies." />
-    <meta property="og:image" content="images/preview.png" />
+    <meta property="og:image" content="<%= current_page.url %>/images/preview.png" />
 
     <!-- Use the title from a page's frontmatter if it has one -->
     <title><%= current_page.data.title || "Middleman" %></title>
