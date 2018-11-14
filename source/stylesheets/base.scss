@@ -53,27 +53,19 @@ body {
 }
 
 a {
-  color: $color-blue;
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 0 1.15em;
+  overflow: hidden;
+  line-height: 1.15;
+  color: black;
   cursor: pointer;
-
-  h1 &,
-  h2 &,
-  h3 &,
-  h4 &,
-  h5 &,
-  h6 &,
-  p &,
-  li &,
-  blockquote &,
-  cite & {
-    text-decoration: none;
-    transition: color 200ms ease;
-  }
-}
-
-p {
-  a {
-    text-decoration: underline;
+  text-decoration: none;
+  transition: all 150ms ease-in-out;
+  
+  &:hover {
+    background-position: 0 1em;
   }
 }
 
