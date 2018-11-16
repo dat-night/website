@@ -1,9 +1,20 @@
 main { padding: 2rem; }
 
-footer {
+footer,
+.footer {
   font-size: $type-size-small;
   padding: 2rem;
   width: 100%;
+
+  &__newsletter-signup {
+    margin-top: 2rem;
+
+    h3 { margin-bottom: 0.5rem;  }
+
+    &__form {      
+      display: flex;
+    }
+  }
 }
 
 .text {
@@ -16,5 +27,36 @@ footer {
   li { 
     list-style-type: disc; 
     margin: 0.5rem 0 0 1rem; 
+  }
+}
+
+input,
+button {
+  padding: 1rem;
+  border-width: 3px;
+  border-style: solid;
+  border-color: $color-gray-light;
+  background: $color-white;
+  color: $color-black;
+  font-family: $type-family-sans;
+  margin-bottom: 0.5rem;
+
+  &:focus {
+    border-color: $color-black;
+  }
+
+  &.mce_inline_error {
+    border-color: red !important;
+  }
+}
+
+button,
+input[type=submit] {
+  text-align: center;
+  transition: all 150ms ease-in-out;
+  border-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%) 1;
+
+  &:hover {
+    background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
   }
 }
