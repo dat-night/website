@@ -16,7 +16,7 @@
     <meta property="og:image" content="https://www.datnight.org/images/preview.png" />
 
     <!-- Use the title from a page's frontmatter if it has one -->
-    <title><%= current_page.data.title || "Middleman" %></title>
+    <title><%= current_page.data.title || "Dat Night" %></title>
     <%= stylesheet_link_tag "app" %>
     <%= javascript_include_tag "site" %>
     <script src="https://js.tito.io/v1" async></script>
@@ -26,7 +26,7 @@
       <%= yield %>
     </main>
 
-    <footer>
+    <footer class="footer">
       <a href="https://rumo.rs" target="_blank">Rumors</a> / 
       <a href="https://datproject.org/" target="_blank">Dat Project</a> / 
       <a href="https://codeforscience.org/" target="_blank">Code for Science and Society</a> / 
@@ -35,9 +35,19 @@
       <p>This site is typeset in <a href="https://www.futurefonts.xyz/scribble-tone/iso">ISO</a>, which was designed by Travis Kochel of <a href="https://www.scribbletone.com/">Scribble Tone</a>, and licensed via <a href="https://futurefonts.xyz">Future Fonts</a>.
       </p>
       <a href="/conduct">Code of conduct</a> 
-      <form>
-        <input><button>
-      </form>
+
+      <div class="footer__newsletter-signup">
+        <form action="https://datnight.us19.list-manage.com/subscribe/post?u=cd51af0f06a42d2550d312dc3&amp;id=fc444ed790" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+          <h3>Sign up to receive news and updates about future events!</h3>
+          <div class="field-group">
+            <input type="email" name="EMAIL" id="mce-EMAIL" class="email" title="The domain portion of the email address is invalid (the portion after the @)." pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$" required>
+            <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+          </div>
+            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_f2d244c0df42a0431bd08ddea_aeaa9dd034" tabindex="-1" value=""></div>
+            <div class="mc-status"></div>
+            <div id="error-for-mce-EMAIL" class="error-message"></div>
+        </form>
+      </div>
     </footer>
   </body>
 </html>
