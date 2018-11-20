@@ -50,6 +50,9 @@ html {
 body {
   background-color: $color-white;
   overflow-x: hidden;
+  padding: 1rem;
+
+  @include tablet { padding: 2rem; }
 }
 
 a {
