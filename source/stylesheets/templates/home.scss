@@ -5,22 +5,10 @@
 
   &__content {
     margin: 2rem 0;
-    max-width: 50ch;
+    max-width: 60ch;
   }
+}
 
-  &__tickets button {
-    background: $color-white;
-    border-width: 3px;
-    border-style: solid;
-    border-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%) 1;
-    color: $color-black;
-    font-family: $type-family-sans;
-    padding: 1rem;
-    text-align: center;
-    transition: all 150ms ease-in-out;
-
-    &:hover {
-      background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
-    }
-  }
+.tito-tickets-button {
+  margin-bottom: 1.5rem;
 }

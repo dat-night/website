@@ -50,6 +50,9 @@ html {
 body {
   background-color: $color-white;
   overflow-x: hidden;
+  padding: 1rem;
+
+  @include tablet { padding: 2rem; }
 }
 
 a {
@@ -84,6 +87,10 @@ h2 {
   font-size: $type-size-medium;
   font-weight: 400;
   line-height: $type-leading-medium;
+}
+
+h3 {
+  font-size: 20px;
 }
 
 ol,
