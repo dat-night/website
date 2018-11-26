@@ -7,6 +7,11 @@
     margin: 2rem 0;
     max-width: 60ch;
   }
+
+  &__schedule,
+  &__workshop {
+    h2 { margin-bottom: 0.75rem; }
+  }
 }
 
 .tito-tickets-button {
