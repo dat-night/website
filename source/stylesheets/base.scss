@@ -48,6 +48,7 @@ html {
 }
 
 body {
+  @include fade-in;
   background-color: $color-white;
   overflow-x: hidden;
   padding: 1rem;
@@ -74,7 +75,7 @@ h1 {
   font-weight: 400;
   line-height: $type-leading-medium;
 
-  @include tablet {
+  @include mobile {
     font-size: $type-size-big;
     line-height: $type-leading-big;
   }
