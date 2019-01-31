@@ -6,12 +6,12 @@
 }
 
 ::selection {
-  background: $color-black;
+  background-color: $color-seafoam;
   color: $color-white;
 }
 
 ::-moz-selection {
-  background: $color-black;
+  background-color: $color-seafoam;
   color: $color-white;
 }
 
@@ -56,7 +56,7 @@ body {
 }
 
 a {
-  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  background-image: linear-gradient(120deg, $color-seafoam 0%, $color-blue-light 100%);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: 0 1.15em;
