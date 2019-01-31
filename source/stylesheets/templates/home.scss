@@ -23,6 +23,7 @@
   background-image: none; 
   
   img {
+    filter: sepia(100%) saturate(300%) brightness(70%) hue-rotate(105deg);
     height: 1.25rem;
     width: auto;
     display: inline-block;
@@ -86,6 +87,21 @@
   opacity: 0;
   transform: scale(0);
   transition: opacity 0.2s, transform 0.2s, z-index 0s 0.2s;
+  
+  &__close {
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    top: 0;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 13px;
+    cursor: pointer;
+    text-align: center;
+    background: #fff;
+    box-shadow: -1px 1px 2px rgba(0,0,0,0.2);
+  }
 }
 
 .modal-visible .modal-inner {
@@ -95,17 +111,3 @@
   transition: opacity 0.2s, transform 0.2s;
 }
 
-.modal-inner__close {
-  position: absolute;
-  z-index: 2;
-  right: 0;
-  top: 0;
-  width: 25px;
-  height: 25px;
-  line-height: 25px;
-  font-size: 13px;
-  cursor: pointer;
-  text-align: center;
-  background: #fff;
-  box-shadow: -1px 1px 2px rgba(0,0,0,0.2);
-}
