@@ -71,3 +71,9 @@
   background-repeat: no-repeat;
   background-position: 0 1.15em;
 }
+
+@mixin gradient-border {
+  border-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%) 1;
+  border-width: 3px;
+  border-style: solid;
+}
