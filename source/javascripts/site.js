@@ -556,26 +556,26 @@ var submitMailChimpForm = function (form) {
 
 };
 
-// Listen to all blur events
-document.addEventListener('blur', function (event) {
+// https://css-tricks.com/form-validation-part-3-validity-state-api-polyfill/
+// // Listen to all blur events
+// document.addEventListener('blur', function (event) {
 
-  // Only run if the field is in a form to be validated
-  if (!event.target.form.classList.contains('validate')) return;
+//   // Only run if the field is in a form to be validated
+//   if (!event.target.form.classList.contains('validate')) return;
 
-  // Validate the field
-  var error = hasError(event.target);
+//   // Validate the field
+//   var error = hasError(event.target);
   
-  // If there's an error, show it
-  if (error) {
-    showError(event.target, error);
-    return;
-  }
+//   // If there's an error, show it
+//   if (error) {
+//     showError(event.target, error);
+//     return;
+//   }
 
-  // Otherwise, remove any existing error message
-  removeError(event.target);
+//   // Otherwise, remove any existing error message
+//   removeError(event.target);
 
-}, true);
-
+// }, true);
 
 // Check all fields on submit
 document.addEventListener('submit', function (event) {
