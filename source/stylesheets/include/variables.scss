@@ -3,13 +3,15 @@ $color-black: #030303;
 $color-white: #fff;
 $color-gray-light: #e2e2e2;
 $color-blue: #3455db;
+$color-seafoam: #84fab0;
+$color-blue-light: #8fd3f4;
 
 $type-family-sans: 'ISO', mono;
 
 $type-size-base: 18px;
 $type-leading-base: 26px;
 
-$type-size-medium: 2rem;
+$type-size-medium: 1.5rem;
 $type-leading-medium: 1.1;
 
 $type-size-big: 3rem;
@@ -27,3 +29,6 @@ $breakpoint-mobile: 640px;
 // transitions
 $base-timing: 0.2s;
 $base-transition: ease;
+
+$spacing-small: 0.25rem;
+$spacing-base: 1rem;
