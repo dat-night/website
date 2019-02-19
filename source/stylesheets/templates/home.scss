@@ -6,15 +6,128 @@
 
   &__content {
     margin: 2rem 0;
-    max-width: 75vw;
+
+    @include tablet { max-width: 75vw; }
   }
 
   &__schedule,
   &__workshop {
     h2 { margin-bottom: 0.75rem; }
+    h3 { margin-bottom: $spacing-small; }
   }
 }
 
 .tito-tickets-button {
   margin-bottom: 1.5rem;
+}
+
+.inline-image {
+  background-image: none; 
+  
+  img {
+    filter: sepia(100%) saturate(300%) brightness(70%) hue-rotate(105deg);
+    height: 1.25rem;
+    width: auto;
+    display: inline-block;
+    margin: 0 0.05rem;
+    cursor: zoom-in;
+    transform: translateY(6px);
+    transition: all $base-transition $base-timing;
+    
+    @include tablet {
+      &:hover {
+        transform: scale(1.5);
+      }
+    }
+  }
+}
+
+.past-event {
+  @include gradient-border;
+  padding: $spacing-base;
+  line-height: 1.75;
+}
+
+.modal {
+  -webkit-overflow-scrolling: touch;
+  bottom: 0;
+  content: "";
+  display: block;
+  font-size: 0;
+  left: 0;
+  opacity: 0;
+  overflow-y: auto;
+  overflow: hidden;
+  position: fixed;
+  right: 0;
+  text-align: center;
+  top: 0;
+  transition: opacity $base-timing, z-index 0s $base-timing;
+  white-space: nowrap;
+  z-index: -1;
+
+  &::after {
+    @include gradient;
+    bottom: 0;
+    content: '';
+    left: 0;
+    mix-blend-mode: hard-light;
+    opacity: 0.7;
+    position: fixed;
+    right: 0;
+    top: 0;
+  }
+
+  img { box-shadow: -1px 1px 2px rgba(0,0,0,0.2); }
+}
+
+.modal > * {
+  display: inline-block;
+  white-space: normal;
+  vertical-align: middle;
+  text-align: left;
+}
+
+.modal:before {
+  display: inline-block;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  vertical-align: middle;
+  content: "";
+}
+
+.vanilla-modal.modal-visible .modal {
+  z-index: 99;
+  opacity: 1;
+  transition: opacity 0.2s;
+}
+
+.modal-inner {
+  position: relative;
+  max-width: 95%;
+  max-height: 90%;
+  z-index: -1;
+  opacity: 0;
+  transform: scale(0);
+  transition: opacity 0.2s, transform 0.2s, z-index 0s 0.2s;
+
+  @include tablet { max-width: 80%; }
+  
+  &__close {
+    cursor: pointer;
+    font-size: $type-size-big;
+    position: absolute;
+    right: $spacing-small;
+    text-align: center;
+    top: $spacing-small;
+    z-index: 2;
+  }
+
+  .modal-visible & {
+    z-index: 100;
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 0.2s, transform 0.2s;
+  }
 }

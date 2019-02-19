@@ -15,6 +15,15 @@
     <meta property="og:description" content="Dat Night is a monthly meetup in Portland, Oregon for people interested in decentralized and distributed web technologies." />
     <meta property="og:image" content="https://www.datnight.org/images/preview.png" />
 
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon-180x180-precomposed.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon-152x152-precomposed.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="apple-touch-icon-144x144-precomposed.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon-precomposed.png">
+    <link rel="shortcut icon" href="favicon.png">
+    <link rel="icon" type="image/ico" href="favicon.ico">
+
     <!-- Use the title from a page's frontmatter if it has one -->
     <title><%= current_page.data.title || "Dat Night" %></title>
     <%= stylesheet_link_tag "app" %>
@@ -50,4 +59,7 @@
       </div>
     </footer>
   </body>
+
+  <script src="../javascripts/modal.js"></script>
+  <script>var modal = new VanillaModal.default();</script>
 </html>

@@ -63,10 +63,10 @@ button {
 button,
 input[type=submit] {
   text-align: center;
-  transition: all 150ms ease-in-out;
-  border-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%) 1;
+  transition: all $base-timing $base-transition;
+  border-color: $color-black;
 
   &:hover {
-    background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    @include gradient-border;
   }
 }
