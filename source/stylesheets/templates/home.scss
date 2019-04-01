@@ -46,6 +46,7 @@
   @include gradient-border;
   padding: $spacing-base;
   line-height: 1.75;
+  margin-bottom: $spacing-base;
 }
 
 .modal {
