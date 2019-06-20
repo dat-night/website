@@ -62,11 +62,11 @@ button {
 
 button,
 input[type=submit] {
+  @include gradient-border;
   text-align: center;
   transition: all $base-timing $base-transition;
-  border-color: $color-black;
 
   &:hover {
-    @include gradient-border;
+    transform: translateY(-2px);
   }
 }
